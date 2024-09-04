@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParcelPro - AI-Powered Delivery System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>ParcelPro</h1>
+            </div>
+            <div class="user-menu">
+                <img src="user-icon.svg" alt="User" class="user-icon" id="user-icon">
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <div class="grid-item"><strong>Name:</strong> John Doe</div>
+                        <div class="grid-item"><strong>Email:</strong> johndoe@example.com</div>
+                        <div class="grid-item"><strong>Phone:</strong> +1234567890</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Allocate Slot</a></li>
+                <li><a href="#" id="your-orders-link">Your Orders</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Efficient and Reliable Delivery</h2>
+            <p>Customize your delivery time with AI-driven technology.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>AI-Powered Scheduling</h3>
+                    <p>Automatically align delivery times with your availability.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-Time Tracking</h3>
+                    <p>Track your parcels with our real-time tracking system.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Secure and Safe</h3>
+                    <p>Your parcels are delivered with the highest security standards.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>24/7 Support</h3>
+                    <p>We're here to assist you at any time, day or night.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="hidden">
+        <div class="container">
+            <h2>Your Orders</h2>
+            <ul id="orders-list">
+                <!-- Orders will be dynamically inserted here -->
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ParcelPro. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
