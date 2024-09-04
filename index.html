@@ -3,75 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ParcelPro - AI-Powered Delivery System</title>
+    <title>ParcelPro - AI-Based Customized Time Slot Delivery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <h1>ParcelPro</h1>
+            <div class="login-info">
+                <div class="login-icon" id="login-icon">Login</div>
+                <div class="login-details">
+                    <div><strong>Name:</strong> John Doe</div>
+                    <div><strong>Phone:</strong> +1234567890</div>
+                    <div><strong>Email:</strong> johndoe@example.com</div>
+                </div>
             </div>
-            <div class="user-menu">
-                <img src="user-icon.svg" alt="User" class="user-icon" id="user-icon">
-                <div class="dropdown">
-                    <div class="dropdown-content">
-                        <div class="grid-item"><strong>Name:</strong> John Doe</div>
-                        <div class="grid-item"><strong>Email:</strong> johndoe@example.com</div>
-                        <div class="grid-item"><strong>Phone:</strong> +1234567890</div>
-                    </div>
+            <div class="logo">
+                <h1>DHSlogix</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Allocate Slot</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Our Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>AI-Driven Time Slot Scheduling</h3>
+                    <p>Efficiently choose delivery times based on your availability using our advanced AI system.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Real-Time Tracking</h3>
+                    <p>Track your parcels in real-time from dispatch to delivery.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Flexible Delivery Options</h3>
+                    <p>Customize delivery times to fit your busy schedule.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>24/7 Customer Support</h3>
+                    <p>We're here to help you anytime with our round-the-clock support.</p>
                 </div>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Allocate Slot</a></li>
-                <li><a href="#" id="your-orders-link">Your Orders</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    </section>
 
     <section class="hero">
         <div class="hero-content">
-            <h2>Efficient and Reliable Delivery</h2>
-            <p>Customize your delivery time with AI-driven technology.</p>
+            <h2>AI-Powered Customized Time Slot Delivery</h2>
+            <p>Align with modern lifestyles and availability for seamless delivery scheduling. Our AI-driven system ensures your parcels arrive at your preferred time.</p>
             <a href="#" class="cta-button">Get Started</a>
         </div>
     </section>
 
-    <section class="features">
+    <section id="contact" class="contact">
         <div class="container">
-            <h2>Our Features</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <h3>AI-Powered Scheduling</h3>
-                    <p>Automatically align delivery times with your availability.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Real-Time Tracking</h3>
-                    <p>Track your parcels with our real-time tracking system.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>Secure and Safe</h3>
-                    <p>Your parcels are delivered with the highest security standards.</p>
-                </div>
-                <div class="feature-item">
-                    <h3>24/7 Support</h3>
-                    <p>We're here to assist you at any time, day or night.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Orders Section -->
-    <section id="orders" class="hidden">
-        <div class="container">
-            <h2>Your Orders</h2>
-            <ul id="orders-list">
-                <!-- Orders will be dynamically inserted here -->
-            </ul>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </div>
     </section>
 
@@ -84,7 +88,5 @@
             </ul>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
