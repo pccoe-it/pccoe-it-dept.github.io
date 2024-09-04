@@ -1,12 +1,34 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const orderList = document.getElementById("order-list");
+document.addEventListener("DOMContentLoaded", function() {
+    // Target the "Your Orders" link in the navbar
+    const ordersLink = document.getElementById("your-orders-link");
+    const ordersSection = document.getElementById("orders");
+    const ordersList = document.getElementById("orders-list");
 
-    // Adding event listener for datetime-local input change
-    orderList.querySelectorAll("input[type='datetime-local']").forEach(input => {
-        input.addEventListener("change", (event) => {
-            const newDateTime = event.target.value;
-            alert(`New date and time set: ${newDateTime}`);
-            // You can add more logic here to save or update the new date and time in the backend
-        });
+    // Sample data for orders
+    const orders = [
+        { id: 1, item: "Laptop", status: "Delivered" },
+        { id: 2, item: "Smartphone", status: "In Transit" },
+        { id: 3, item: "Headphones", status: "Pending" }
+    ];
+
+    // Toggle orders section visibility when "Your Orders" is clicked
+    ordersLink.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        ordersSection.classList.toggle("hidden");
+        displayOrders();
     });
+
+    // Function to display orders
+    function displayOrders() {
+        // Clear previous orders
+        ordersList.innerHTML = "";
+        
+        // Add each order to the list
+        orders.forEach(order => {
+            const listItem = document.createElement("li");
+            listItem.textContent = `Order #${order.id}: ${order.item} - ${order.status}`;
+            ordersList.appendChild(listItem);
+        });
+    }
 });
+
